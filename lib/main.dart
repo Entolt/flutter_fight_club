@@ -125,11 +125,11 @@ class MyHomePageState extends State<MyHomePage> {
           yourLives -= 1;
         }
         if (enemysLives == 0 && yourLives == 0) {
-          centerText = "Draw.";
+          centerText = "Draw";
         } else if (enemysLives == 0) {
-          centerText = "You won.";
+          centerText = "You won";
         } else if (yourLives == 0) {
-          centerText = "You lost.";
+          centerText = "You lost";
         } else {
           String first = enemyLoseLife
               ? "You hit enemy's ${attackingBodyPart!.name.toLowerCase()}."
